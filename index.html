@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sina Ranjbar | Senior UX Designer</title>
+    <meta name="description" content="Senior UX Designer specializing in AI-driven experiences and complex enterprise systems.">
+    
+    <!-- Google Fonts: Inter (Standard for Tech/UX) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <style>
+        :root {
+            --bg-color: #F5F5F7; /* Apple-style off-white */
+            --text-main: #1D1D1F;
+            --text-sub: #86868B;
+            --accent: #000000;
+            --card-bg: #FFFFFF;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            padding: 40px 20px; /* Added top padding for breathing room */
+            line-height: 1.5;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 440px; /* Slightly tighter for better readability */
+            text-align: center;
+            animation: fadeIn 0.8s ease-out;
+        }
+
+        /* Profile Section */
+        .profile-header {
+            margin-bottom: 32px;
+        }
+
+        h1 {
+            font-weight: 700;
+            font-size: 2rem;
+            margin-bottom: 6px;
+            letter-spacing: -0.5px;
+            color: var(--text-main);
+        }
+
+        h2 {
+            font-weight: 400;
+            font-size: 1.1rem;
+            color: var(--text-sub);
+            margin-bottom: 20px;
+        }
+
+        .tagline {
+            font-size: 0.9rem;
+            color: var(--text-main);
+            background: var(--card-bg);
+            padding: 12px 16px;
+            border-radius: 12px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.03);
+            display: inline-block;
+            font-weight: 500;
+            line-height: 1.4;
+        }
+
+        /* Button Stack */
+        .link-stack {
+            display: flex;
+            flex-direction: column;
+            gap: 14px;
+        }
+
+        .btn {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            text-decoration: none;
+            padding: 16px 24px;
+            border-radius: 14px;
+            font-weight: 500;
+            font-size: 0.95rem;
+            transition: all 0.2s ease;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.02);
+            position: relative;
+        }
+
+        /* Primary Button (CV) */
+        .btn-primary {
+            background-color: var(--accent);
+            color: white;
+            border: 1px solid var(--accent);
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+        }
+
+        /* Secondary Buttons (Links) */
+        .btn-secondary {
+            background-color: var(--card-bg);
+            color: var(--text-main);
+            border: 1px solid transparent;
+        }
+
+        .btn-secondary:hover {
+            border-color: #d2d2d7;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 15px rgba(0,0,0,0.06);
+        }
+
+        /* Contact Buttons (Slightly distinct) */
+        .btn-contact {
+            background-color: rgba(255, 255, 255, 0.5); /* Slightly transparent */
+            border: 1px solid rgba(0,0,0,0.05);
+            color: var(--text-main);
+        }
+        
+        .btn-contact:hover {
+            background-color: var(--card-bg);
+            border-color: var(--text-sub);
+        }
+
+        /* Icons & Text Layout */
+        .icon-wrapper {
+            display: flex;
+            align-items: center;
+            gap: 14px;
+        }
+
+        .btn i.fa-solid, .btn i.fa-brands, .btn i.fa-regular {
+            font-size: 1.2rem;
+            width: 24px; /* Fixed width for alignment */
+            text-align: center;
+        }
+
+        /* Divider */
+        .divider {
+            height: 1px;
+            background-color: #E5E5EA;
+            margin: 10px 0;
+            width: 100%;
+        }
+
+        /* Footer */
+        footer {
+            margin-top: 40px;
+            font-size: 0.8rem;
+            color: var(--text-sub);
+        }
+
+        /* Animations */
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        /* Mobile Adjustments */
+        @media (max-width: 400px) {
+            h1 { font-size: 1.75rem; }
+            .btn { padding: 14px 18px; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        
+        <header class="profile-header">
+            <!-- Name & Title -->
+            <h1>Sina Ranjbar</h1>
+            <h2>Senior UX Designer @ Oracle</h2>
+            
+            <!-- Value Prop -->
+            <div class="tagline">
+                Specializing in AI-Driven Experiences<br>& Complex Enterprise Systems
+            </div>
+        </header>
+
+        <nav class="link-stack">
+            <!-- 1. Primary Action: Download CV -->
+            <a href="./Sina_Ranjbar_CV.pdf" target="_blank" class="btn btn-primary">
+                <div class="icon-wrapper">
+                    <i class="fa-solid fa-file-arrow-down"></i>
+                    <span>Download CV / Resume</span>
+                </div>
+                <i class="fa-solid fa-arrow-right"></i>
+            </a>
+
+            <!-- 2. Portfolio -->
+            <a href="https://www.behance.net/sinapersia" target="_blank" class="btn btn-secondary">
+                <div class="icon-wrapper">
+                    <i class="fa-brands fa-behance"></i>
+                    <span>View Portfolio</span>
+                </div>
+                <i class="fa-solid fa-arrow-up-right-from-square" style="color: var(--text-sub);"></i>
+            </a>
+
+            <!-- 3. LinkedIn -->
+            <a href="https://www.linkedin.com/in/ranjbarsina/" target="_blank" class="btn btn-secondary">
+                <div class="icon-wrapper">
+                    <i class="fa-brands fa-linkedin"></i>
+                    <span>LinkedIn Profile</span>
+                </div>
+                <i class="fa-solid fa-arrow-up-right-from-square" style="color: var(--text-sub);"></i>
+            </a>
+            
+            <!-- Visual Divider -->
+            <div class="divider"></div>
+
+            <!-- 4. Email -->
+            <a href="mailto:sinaranjbar@gmail.com" class="btn btn-contact">
+                <div class="icon-wrapper">
+                    <i class="fa-regular fa-envelope"></i>
+                    <span>sinaranjbar@gmail.com</span>
+                </div>
+                <i class="fa-solid fa-copy" style="font-size:0.8rem; color: var(--text-sub); opacity: 0.5;"></i>
+            </a>
+
+            <!-- 5. Phone -->
+            <a href="tel:+393888240108" class="btn btn-contact">
+                <div class="icon-wrapper">
+                    <i class="fa-solid fa-phone"></i>
+                    <span>+39 388 824 0108</span>
+                </div>
+                <i class="fa-solid fa-phone-flip" style="font-size:0.8rem; color: var(--text-sub); opacity: 0.5;"></i>
+            </a>
+
+        </nav>
+
+        <footer>
+            <p>Based in Milan, Italy • Open to Relocation</p>
+        </footer>
+
+    </div>
+
+</body>
+</html>
